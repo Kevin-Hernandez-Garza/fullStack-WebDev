@@ -4,6 +4,7 @@
     --secondary-color: #fff;
     --tertiary-color: #262626;
 }
+/* end */
 
 /* all elements */
 * {
@@ -17,6 +18,11 @@ body {
     background-color: var(--primary-color);
     font-family: "Calibre", "Inter", "San Francisco","SF Pro Text", sans-serif;
 }
+
+section {
+    padding: 60px;
+}
+/* end */
 
 /* header */
 header {
@@ -32,10 +38,6 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     z-index: 1995;
-}
-
-section {
-    padding: 60px;
 }
 
 .header h1 {
@@ -62,6 +64,11 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 15px var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header nav ul li a:not(last child) {
+    margin-right: 12px;
 }
 
 header nav ul li a:hover {
@@ -69,11 +76,13 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+/* end */
 
 /* anchor elements */
 a {
     text-decoration: none;
 }
+/* end */
 
 /* jumbotron */
 .jumbotron {
@@ -93,11 +102,86 @@ a {
     font-size: 32px;
     text-shadow: 0 0 25px var(--primary-color);
 }
+/* end */
+
+/* sections */
+.section-title {
+    font-size: 50px;
+    font-weight: lighter;
+    border-bottom: 3px solid var(--tertiary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+/* end */
 
 /* about section */
 
-/* work section */
+.about-me img {
+    border-radius: 100%;
+    border: 3px solid var(--tertiary-color);
+    width: 30%;
+    height: 10%;
+    box-shadow: 0 0 20px var(--tertiary-color);
+}
 
+.about-me p {
+    width: 40%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/* work section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flex-item {
+  width: 30%;
+  border-radius: 15px;
+  border: 2px solid var(--tertiary-color);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  min-height: 250px;
+  padding: 20px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex-item a {
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(85, 107, 47, 0.7);
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.run-buddy {
+    background-image: url("../images/runBuddy-mockup.png");
+}
+
+.horiseon {
+    background-image: url("../images/horiseon-mockup.png");
+}
+
+.first-project {
+    background-image: url("../images/webpage-screenshot.png");
+}
+
+.coming-soon {
+    background-image: url("../images/coming-soon.jpeg");
+}
 /* contact section */
 
 
