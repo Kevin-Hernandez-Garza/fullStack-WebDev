@@ -14,7 +14,7 @@
 
 <body>
     <!-- navigation -->
-    <header>
+    <header class="header">
         <h1> Kevin Hernandez </h1>
 
         <!-- navigation links -->
@@ -34,37 +34,46 @@
     </header>
 
     <!-- jumbotron & avatar img -->
-    <section class="jumbotron">
-        <img src="./assets/images/IMG_3345.jpg" alt="Kevin Hernandez in a backyard!">
-
-        <h2 class="subtitle">
-            Hello friends!
-        </h2>
-    </section>
+    <div class="jumbotron">
+        <div class="jumbotron-subtitle">
+            <h2 class="subtitle">
+                Hello friends!
+            </h2>
+        </div>
+    </div>
 
     <!-- main content -->
     <main>
         <!-- about section -->
         <section id="about">
-            <h2>
-                ABOUT
-            </h2>
+            <div class="flex-row">
+                <h2 class="section-title">
+                    ABOUT
+                </h2>
+            </div>
 
-            <p>
-                Hello! My name is Kevin and I fell in love at first type. My interest for programming started with a
-                simple click of a YouTube video out of curiosity teaching me how to build a simple "Rock, Paper,
-                Scissors" game and after reading a book called <cite>HTML & CSS</cite> by Jon Duckett which is a must
-                read. Then fast forward to two years later after saving money
-                I decided to take a leap of
-                faith and attend a cohort at the University of Texas at Austin to become a Full-Stack Web Developer. I
-                couldn't be more happy with myself to start this journey in this AMAZING field!
-            </p>
+            <div class="about-me">
+                <img src="./assets/images/IMG_3345.jpg" alt="Kevin Hernandez in a backyard!" />
+                <p>
+                    Hello! My name is Kevin and I fell in love at first type. My interest for programming started with a
+                    simple click of a YouTube video out of curiosity teaching me how to build a simple "Rock, Paper,
+                    Scissors" game and after reading a book called <cite>HTML & CSS</cite> by Jon Duckett which is a
+                    must
+                    read. Then fast forward to two years later after saving money
+                    I decided to take a leap of
+                    faith and attend a cohort at the University of Texas at Austin to become a Full-Stack Web Developer.
+                    I
+                    couldn't be more happy with myself to start this journey in this AMAZING field!
+                </p>
+            </div>
         </section>
         <!-- work section -->
         <section id="work">
-            <h2>
-                WORK
-            </h2>
+            <div class="flex-row">
+                <h2 class="section-title">
+                    WORK
+                </h2>
+            </div>
 
             <div class="projects-container">
                 <div class="flex-item">
@@ -119,9 +128,11 @@
         </section>
         <!-- contact section -->
         <section id="contact">
-            <h2>
-                CONTACT
-            </h2>
+            <div class="flex-row">
+                <h2 class="section-title">
+                    CONTACT
+                </h2>
+            </div>
 
             <div class="contact-links">
                 <address>
