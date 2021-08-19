@@ -104,7 +104,7 @@ a {
 }
 /* end */
 
-/* sections */
+/* all section titles */
 .section-title {
     font-size: 50px;
     font-weight: lighter;
@@ -117,7 +117,6 @@ a {
 /* end */
 
 /* about section */
-
 .about-me img {
     border-radius: 100%;
     border: 3px solid var(--tertiary-color);
@@ -138,6 +137,8 @@ a {
     align-items: center;
     justify-content: space-around;
 }
+/* end */
+
 /* work section */
 .projects-container {
     display: flex;
@@ -182,8 +183,24 @@ a {
 .coming-soon {
     background-image: url("../images/coming-soon.jpeg");
 }
-/* contact section */
+/* end */
 
+/* contact section */
+.contact-links {
+    width: fit-content;
+    border-left: 2px solid var(--secondary-color);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/* end */
 
 /* footer */
 footer {
@@ -192,3 +209,4 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+/* end */
