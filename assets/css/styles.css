@@ -1,0 +1,110 @@
+/* global color variable properties */
+:root {
+    --primary-color: #556b2f;
+    --secondary-color: #fff;
+    --tertiary-color: #262626;
+}
+
+/* all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Calibre", "Inter", "San Francisco","SF Pro Text", sans-serif;
+}
+
+/* header */
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/jumbotron.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 1995;
+}
+
+section {
+    padding: 60px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    text-shadow: 0 0 25px var(--primary-color);
+}
+
+header nav {
+   margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 15px var(--secondary-color);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* anchor elements */
+a {
+    text-decoration: none;
+}
+
+/* jumbotron */
+.jumbotron {
+    height: 700px;
+    width: 100%;
+    background-image: url("../images/jumbotron.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
+}
+
+/* FIX THE H2, CENTER IT AT THE BOTTOM */
+.jumbotron-subtitle h2 {
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+    font-size: 32px;
+    text-shadow: 0 0 25px var(--primary-color);
+}
+
+/* about section */
+
+/* work section */
+
+/* contact section */
+
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-around;
+}
