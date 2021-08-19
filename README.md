@@ -1,6 +1,7 @@
 # Kevin Hernandez's Portfolio
 
 ## Description
+My personal portfolio that showcases all my work and links to contact me!
 
 ## Built With
 * HTML
@@ -8,7 +9,7 @@
 
 ## Screenshot
 
-## Web*site
+## Website
 * https://kevin-hernandez-garza.github.io/fullStack-WebDev/
 
 ## Contribution 
