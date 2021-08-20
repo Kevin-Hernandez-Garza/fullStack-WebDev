@@ -8,7 +8,7 @@ My personal portfolio that showcases all my work and links to contact me!
 * CSS
 
 ## Screenshot
-* ![mockup!](assets/images/mock-up.png)
+* ![mockup!](assets/images/portfolio-mockup.png)
 
 ## Website
 * https://kevin-hernandez-garza.github.io/fullStack-WebDev/
