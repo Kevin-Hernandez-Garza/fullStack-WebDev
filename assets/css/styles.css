@@ -4,7 +4,7 @@
     --secondary-color: #fff;
     --tertiary-color: #262626;
 }
-/* end */
+
 
 /* all elements */
 * {
@@ -22,7 +22,13 @@ body {
 section {
     padding: 60px;
 }
-/* end */
+
+/* anchor elements */
+a {
+    text-decoration: none;
+}
+
+
 
 /* header */
 header {
@@ -76,13 +82,6 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
-/* end */
-
-/* anchor elements */
-a {
-    text-decoration: none;
-}
-/* end */
 
 /* jumbotron */
 .jumbotron {
@@ -108,7 +107,7 @@ a {
     background-color: rgba(255,255,255, 0.3);
     padding: 5px;
 }
-/* end */
+
 
 /* all section titles */
 .section-title {
@@ -117,43 +116,50 @@ a {
     border-bottom: 3px solid var(--tertiary-color);
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 30px auto 35px auto;
     width: 50%;
 }
 
 .flex-row {
     display: flex;
 }
-/* end */
+
 
 /* about section */
-.about-me img {
-    border-radius: 100%;
-    border: 3px solid var(--tertiary-color);
-    width: 30%;
-    height: 10%;
-    box-shadow: 0 0 20px var(--tertiary-color);
-}
-
-.about-me p {
-    width: 40%;
-    line-height: 1.5;
-    font-size: 20px;
-}
-
-.about-flex {
+.about {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
 }
-/* end */
+
+.about img {
+    width: 50%;
+    border-radius: 100%;
+    border: 3px solid var(--tertiary-color);
+    box-shadow: 0 0 25px var(--tertiary-color);
+    flex: 1;
+}
+
+.about p {
+    width: 100%;
+    line-height: 1.7;
+    font-size: 20px;
+    flex: 2;
+}
+
+.flex-child {
+    flex: 1;
+    text-align: center;
+}
+
 
 /* work section */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 
 .run-buddy {
@@ -162,16 +168,16 @@ a {
 }
 
 .flex-item {
+  min-height: 250px;
+  padding: 20px 0;
+  background-size: cover;
+  background-position: center;  
   width: 30%;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 2px solid var(--tertiary-color);
   margin-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
-  min-height: 250px;
-  padding: 20px 0;
-  background-size: cover;
-  background-position: center;
 }
 
 .flex-item a {
@@ -208,7 +214,7 @@ a {
 .coming-soon {
     background-image: url("../images/coming-soon.jpeg");
 }
-/* end */
+
 
 /* contact section */
 .contact-links {
@@ -221,17 +227,108 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-/* end */
+
 
 /* footer */
 footer {
     width: 100%;
     padding: 30px 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-/* end */
+
 
 
 
 /* media queries */
+@media screen and (max-width: 988px) {
+    /* media query for small desktop screen or smaller*/
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h4, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .flex-item {
+        text-align: center;
+    }
+
+    .flex-item:not(:first-child) {
+        flex: 1 35%;
+        justify-content: space-around;
+    }
+    
+    .media-query {
+        margin-right: 5px;
+    }
+}
+
+/* media query for tablets or smaller */
+@media screen and (max-width: 768px) {
+    .flex-item h3 {
+        font-size: 24px;
+    }
+
+    .flex-child {
+        flex: 1 100%;
+    }
+
+    .flex-child img {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* media query for mobile phone or smaller */
+@media screen and (max-width:575px) {
+    .flex-item {
+        flex: 1 100%;
+    }
+
+    .flex-item h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .contact-links a {
+        font-size: 22px;
+
+    }
+
+    .contact-links {
+        flex: 1 40%;
+        text-align: center;
+        border: none;
+    }
+
+    
+    .about p {
+        font-size: 16px;
+    }
+
+}
