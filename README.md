@@ -7,6 +7,7 @@ My personal portfolio that showcases all my work, most of it during my time at t
 ## Table of Contents
 
 - [Built With](#built-with)
+- [Future Development](#future-development)
 - [Screenshot](#screenshot)
 - [Website](#website)
 - [Contribution](#contribution)
@@ -15,6 +16,12 @@ My personal portfolio that showcases all my work, most of it during my time at t
 
 - HTML5
 - CSS3
+
+## Future Development
+
+- Integrate Bootstrap CSS Framework
+- Add Additional Projects to Work section
+- Make Webpage more Mobile-friendly
 
 ## Screenshot
 
