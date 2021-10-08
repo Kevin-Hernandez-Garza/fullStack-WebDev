@@ -6,10 +6,10 @@ My personal portfolio that showcases all my work, most of it during my time at t
 
 ## Table of Contents
 
-- [Built With] (#built-with)
-- [Screenshot] (#screenshot)
-- [Website] (#website)
-- [Contribution] (#contribution)
+- [Built With](#built-with)
+- [Screenshot](#screenshot)
+- [Website](#website)
+- [Contribution](#contribution)
 
 ## Built With
 
