@@ -215,6 +215,10 @@ header nav ul li a:hover {
   background-image: url("../images/group-mock.png");
 }
 
+.group-2 {
+  background-image: url("../images/group-2.png");
+}
+
 .coming-soon {
   background-image: url("../images/coming-soon.jpeg");
 }
