@@ -223,6 +223,10 @@ header nav ul li a:hover {
   background-image: url("../images/coming-soon.jpeg");
 }
 
+.justAwear {
+  background-image: url("../images/JAWmock.png");
+}
+
 /* contact section */
 .contact-links {
   border-left: 2px solid var(--secondary-color);
