@@ -227,6 +227,10 @@ header nav ul li a:hover {
   background-image: url("../images/JAWmock.png");
 }
 
+.portfolioV2 {
+  background-image: url("../images/portfolioV1.png");
+}
+
 /* contact section */
 .contact-links {
   border-left: 2px solid var(--secondary-color);
